@@ -1,0 +1,63 @@
+{
+"layer": "top",
+	"modules-left": ["custom/launcher","cpu","memory","hyprland/window","tray"],
+	"modules-center": ["wlr/workspaces"],
+	"modules-right": ["hyprland/language","pulseaudio","clock", "battery","custom/power"],
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": "{icon} 0%",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+	"hyprland/window": {
+    "format": "{class}",
+    "separate-outputs": true
+},
+	"wlr/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+        "urgent": "",
+        "active": "",
+        "default": ""
+        },
+    "sort-by-number": true
+    },
+    "hyprland/language": {
+    "format": "{}",
+    "format-en": "English",
+    "format-ru": "Russian",
+    
+},
+	"tray":{
+		"icon-size":25,
+		"spacing": 10
+	},
+    "clock": {
+        "format": "{: %H:%M %d/%m/%Y}"
+    },
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi"
+    },
+    "custom/power":{
+        "format": " ",
+        "on-click": "rofi -show power-menu -modi \"power-menu:rofi-power-menu --choices=shutdown/reboot/suspend\"",
+    },
+}
