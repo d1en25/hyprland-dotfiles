@@ -1,8 +1,8 @@
 {
 "layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","hyprland/window","tray"],
+	"modules-left": ["custom/launcher","cpu","memory", "temperature","hyprland/window","tray"],
 	"modules-center": ["wlr/workspaces"],
-	"modules-right": ["hyprland/language","pulseaudio","clock", "battery","custom/power"],
+	"modules-right": ["hyprland/language","pulseaudio","clock", "custom/power"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -15,21 +15,32 @@
 		}
 	},
 	"hyprland/window": {
-    "format": "{class}",
+    "format": " {class}",
     "separate-outputs": true
+},
+"temperature": {
+    // "thermal-zone": 2,
+    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    // "critical-threshold": 80,
+    // "format-critical": "{temperatureC}°C ",
+    "format": " {temperatureC}°C"
 },
 	"wlr/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
         "format-icons": {
+        "1" : "",
+        "2" : " ",
+        "3" : "󰓇 ",
         "urgent": "",
         "active": "",
         "default": ""
         },
-    "sort-by-number": true
+    "sort-by-number": true,
+    "separate-outputs" : true
     },
     "hyprland/language": {
-    "format": "{}",
+    "format": "  {}",
     "format-en": "English",
     "format-ru": "Russian",
     
@@ -39,7 +50,7 @@
 		"spacing": 10
 	},
     "clock": {
-        "format": "{: %H:%M %d/%m/%Y}"
+        "format": "{: %H:%M  %d/%m/%Y}"
     },
     "cpu": {
         "interval": 15,
@@ -57,7 +68,7 @@
         "on-click-right": "killall rofi"
     },
     "custom/power":{
-        "format": " ",
+        "format": "⏻ ",
         "on-click": "rofi -show power-menu -modi \"power-menu:rofi-power-menu --choices=shutdown/reboot/suspend\"",
     },
 }
