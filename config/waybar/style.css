@@ -1,120 +1,91 @@
 @import "mocha.css";
+
 * {
-  border: none;
-  border-radius: 15px;
-  font-family: "JetbrainsMono Nerd Font";
-  font-size: 15px;
-  min-height: 10px;
+  font-family: "JetBrains Mono Nerd Font";
+  font-size: 14.5px;
+  font-weight: bold;
 }
 
 window#waybar {
-  background: transparent;
+  border-radius: 10px;
+  border: 1.5px solid @lavender;
+  background: @base;
 }
 
 window#waybar.hidden {
   opacity: 0.2;
 }
 
+#clock,
+#battery,
+#cpu,
+#language,
+#window,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray {
+  padding: 0 10px;
+}
+
 #workspaces {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
   color: @peach;
-  background: @base;
+}
+
+#workspaces button.active {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 #window {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
   color: @peach;
-  background: @base;
 }
 
 #pulseaudio {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
   color: @lavender;
-  background: @base;
 }
 
 @keyframes blink {
   to {
-    background-color: @base;
+    background-color: @mantle;
     color: @text;
   }
 }
 
+#custom-player {
+  color: @green;
+}
+
 #clock {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: @mauve;
-  background: @base;
+  color: @blue;
 }
 
 #memory {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
   color: @green;
-  background: @base;
 }
 #cpu {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
   color: @teal;
-  background: @base;
 }
 #temperature {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
   color: @yellow;
-  background: @base;
 }
 #language {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: @maroon;
-  background: @base;
+  color: @mauve;
 }
 #tray {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background: @base;
 }
 
 #custom-launcher {
-  font-size: 24px;
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 5px;
+  font-size: 22px;
+  padding: 0 5px 0 15px;
   color: @sapphire;
-  background: @base;
 }
 
 #custom-power {
   font-size: 20px;
-  margin-top: 6px;
-  margin-left: 8px;
-  margin-right: 8px;
-  padding-left: 10px;
-  padding-right: 5px;
+  padding: 0 20px 0 5px;
   color: @red;
-  background: @base;
 }
