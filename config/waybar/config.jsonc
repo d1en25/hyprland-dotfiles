@@ -3,11 +3,7 @@
   "margin-left": 5,
   "margin-right": 5,
   "margin-top": 5,
-  "modules-left": [
-    "custom/launcher",
-    "wlr/workspaces",
-    "custom/player",
-  ],
+  "modules-left": ["custom/launcher", "wlr/workspaces", "custom/player"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
@@ -20,6 +16,7 @@
     "format": " {}",
     "max-length": 200,
     "exec-if": "pgrep spotify",
+    "exec-on-event": "on-click",
     "interval": 1,
     "return-type": "json",
     "on-click": "playerctl -p spotify play-pause",

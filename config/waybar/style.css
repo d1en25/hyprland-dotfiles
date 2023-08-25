@@ -3,17 +3,24 @@
 * {
   font-family: "JetBrains Mono Nerd Font";
   font-size: 15px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 window#waybar {
   border-radius: 10px;
-  border: 1.7px solid @blue;
+  /* border: 1.7px solid @blue; */
   background: @base;
 }
 
 window#waybar.hidden {
   opacity: 0.2;
+}
+
+tooltip {
+  background: @base;
+}
+tooltip label {
+  color: white;
 }
 
 #clock,
