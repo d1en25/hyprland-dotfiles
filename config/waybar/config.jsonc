@@ -1,15 +1,15 @@
 {
   "layer": "top",
-  "margin-left": 5,
-  "margin-right": 5,
-  "margin-top": 5,
+  "margin-left": 3,
+  "margin-right": 3,
+  "margin-top": 3,
   "modules-left": ["custom/launcher", "wlr/workspaces", "custom/player"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
     "custom/clipboard",
-    "hyprland/language",
     "pulseaudio",
+    "hyprland/language",
     "custom/power"
   ],
   "custom/player": {
@@ -70,7 +70,7 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{:󰥔 %H:%M  %d/%m/%Y}"
+    "format": "{:  %H:%M  %a %d/%m}"
   },
   "cpu": {
     "interval": 15,
@@ -82,17 +82,13 @@
     "format": " {}%",
     "max-length": 10
   },
-  "custom/clipboard": {
-    "format": "󰨸",
-    "on-click": "cliphist list | rofi -dmenu | cliphist decode | wl-copy"
-  },
   "custom/launcher": {
-    "format": " ",
-    "on-click": "rofi -show drun",
+    "format": "",
+    "on-click": "~/.config/rofi/scripts/launcher_t2",
     "on-click-right": "killall rofi"
   },
   "custom/power": {
     "format": "⏻",
-    "on-click": "rofi -show power-menu -modi \"power-menu:rofi-power-menu --choices=shutdown/reboot/suspend\""
+    "on-click": "~/.config/rofi/powermenu/type-3/powermenu.sh"
   }
 }

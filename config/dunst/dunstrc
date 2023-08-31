@@ -458,7 +458,7 @@
 #
 #
 [global]
-frame_color = "#89B4FA"
+frame_color = "#f2cdcd"
 separator_color= frame
 
 [urgency_low]

@@ -7,8 +7,8 @@
 }
 
 window#waybar {
-  border-radius: 10px;
-  /* border: 1.7px solid @blue; */
+  border-radius: 5px;
+  border: 2px solid @flamingo;
   background: @base;
 }
 
@@ -48,7 +48,7 @@ tooltip label {
 }
 
 #pulseaudio {
-  color: @blue;
+  color: @lavender;
 }
 
 @keyframes blink {
@@ -63,15 +63,17 @@ tooltip label {
 }
 
 #clock {
-  color: @blue;
+  color: @pink;
 }
 
 #memory {
   color: @green;
 }
+
 #custom-clipboard {
-  font-size: 21px;
-  color: @lavender
+  font-size: 20.5px;
+  padding: 0 15px 0 10px;
+  color: @blue;
 }
 #cpu {
   color: @teal;
@@ -87,12 +89,12 @@ tooltip label {
 
 #custom-launcher {
   font-size: 22px;
-  padding: 0 5px 0 15px;
-  color: @sapphire;
+  padding: 0 8px 0 15px;
+  color: @sky;
 }
 
 #custom-power {
   font-size: 20px;
-  padding: 0 20px 0 5px;
+  padding: 0 20px 0 7px;
   color: @red;
 }
