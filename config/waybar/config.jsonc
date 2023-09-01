@@ -63,7 +63,8 @@
   "hyprland/language": {
     "format": "󰌌 {}",
     "format-en": "English",
-    "format-ru": "Russian"
+    "format-ru": "Russian",
+    "format-uk": "Ukraine"
   },
   "tray": {
     "icon-size": 25,
