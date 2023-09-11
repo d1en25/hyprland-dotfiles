@@ -4,10 +4,11 @@
   font-family: "JetBrains Mono Nerd Font";
   font-size: 15px;
   font-weight: bolder;
+  min-height: 15px;
 }
 
 window#waybar {
-  border-radius: 5px;
+  border-radius: 0px;
   border: 2px solid @flamingo;
   background: @base;
 }

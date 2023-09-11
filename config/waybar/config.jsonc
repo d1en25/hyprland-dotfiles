@@ -3,7 +3,7 @@
   "margin-left": 3,
   "margin-right": 3,
   "margin-top": 3,
-  "modules-left": ["custom/launcher", "wlr/workspaces", "custom/player"],
+  "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/player"],
   "modules-center": ["clock"],
   "modules-right": [
     "tray",
@@ -43,22 +43,11 @@
     // "format-critical": "{temperatureC}°C ",
     "format": " {temperatureC}°C"
   },
-  "wlr/workspaces": {
-    "format": "{icon}",
+  "hyprland/workspaces": {
+    "format": "{name}",
     "on-click": "activate",
-    "format-icons": {
-      "1": "1",
-      "2": "2",
-      "3": "3",
-      "4": "4",
-      "5": "5",
-      "6": "6",
-      "7": "7",
-      "8": "8",
-      "9": "9",
-      "10": "10"
-    },
-    "sort-by-number": true
+    "sort-by-number": true,
+    "all-outputs": true
   },
   "hyprland/language": {
     "format": "󰌌 {}",
@@ -67,7 +56,7 @@
     "format-uk": "Ukraine"
   },
   "tray": {
-    "icon-size": 25,
+    "icon-size": 24,
     "spacing": 10
   },
   "clock": {
