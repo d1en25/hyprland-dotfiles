@@ -1,18 +1,16 @@
 {
   "layer": "top",
-  "margin-left": 3,
-  "margin-right": 3,
+  "margin-left": 4,
+  "margin-right": 4,
   "margin-top": 3,
-  "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/player"],
-  "modules-center": ["clock"],
-  "modules-right": [
-    "tray",
-    "custom/clipboard",
-    "pulseaudio",
-    "hyprland/language",
-    "custom/power"
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces",
+    "hyprland/language"
   ],
-  "custom/player": {
+  "modules-center": ["clock"],
+  "modules-right": ["custom/spotify", "pulseaudio", "tray"],
+  "custom/spotify": {
     "format": " {}",
     "max-length": 200,
     "exec-if": "pgrep spotify",
@@ -56,11 +54,11 @@
     "format-uk": "Ukraine"
   },
   "tray": {
-    "icon-size": 24,
-    "spacing": 10
+    "icon-size": 18,
+    "spacing": 8
   },
   "clock": {
-    "format": "{:  %H:%M  %a %d/%m}"
+    "format": "{:%A %d/%m %H:%M}"
   },
   "cpu": {
     "interval": 15,
@@ -74,7 +72,7 @@
   },
   "custom/launcher": {
     "format": "",
-    "on-click": "~/.config/rofi/scripts/launcher_t2",
+    "on-click": "~/.config/rofi/powermenu/type-3/powermenu.sh",
     "on-click-right": "killall rofi"
   },
   "custom/power": {

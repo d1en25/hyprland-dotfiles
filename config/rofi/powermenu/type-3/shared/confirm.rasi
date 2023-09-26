@@ -22,7 +22,9 @@ window {
     anchor:                      center;
     fullscreen:                  false;
     width:                       500px;
-    border-radius:               20px;
+    border-radius:               5px;
+    border:                      2px solid;
+    border-color:                @selected;
     cursor:                      "default";
     background-color:            @background;
 }

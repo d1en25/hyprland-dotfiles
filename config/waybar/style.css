@@ -1,15 +1,15 @@
 @import "mocha.css";
 
 * {
-  font-family: "JetBrains Mono Nerd Font";
-  font-size: 15px;
-  font-weight: bolder;
-  min-height: 15px;
+  font-family: JetBrains Mono Nerd Font;
+  font-size: 13.5px;
+  font-weight: 700;
+  min-height: 11px;
 }
 
 window#waybar {
-  border-radius: 0px;
-  border: 2px solid @flamingo;
+  border-radius: 5px;
+  border: 1px solid @mauve;
   background: @base;
 }
 
@@ -36,7 +36,7 @@ tooltip label {
 #wireplumber,
 #workspaces,
 #tray {
-  padding: 0 10px;
+  padding: 0 7px;
   color: white;
 }
 
@@ -59,12 +59,13 @@ tooltip label {
   }
 }
 
-#custom-player {
+#custom-spotify {
   color: @green;
+  padding-right: 7px;
 }
 
 #clock {
-  color: @pink;
+  color: @mauve;
 }
 
 #memory {
@@ -83,19 +84,17 @@ tooltip label {
   color: @yellow;
 }
 #language {
-  color: @mauve;
-}
-#tray {
+  color: @blue;
 }
 
 #custom-launcher {
-  font-size: 22px;
-  padding: 0 8px 0 15px;
+  font-size: 18px;
+  padding: 0 7px 0 9px;
   color: @sky;
 }
 
 #custom-power {
-  font-size: 20px;
-  padding: 0 20px 0 7px;
+  font-size: 17px;
+  padding: 0 15px 0 5px;
   color: @red;
 }
