@@ -28,15 +28,15 @@ window {
     anchor:                      east;
     fullscreen:                  false;
     width:                       115px;
-    x-offset:                    -15px;
+    x-offset:                    -20px;
     y-offset:                    0px;
 
     /* properties for all widgets */
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      0px solid;
-    border-radius:               0px;
+    border:                      1px solid;
+    border-radius:               5px;
     border-color:                @selected;
     cursor:                      "default";
     background-color:            @background;
@@ -150,7 +150,7 @@ element {
     margin:                      0px;
     padding:                     20px 0px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               5px;
     border-color:                @selected;
     background-color:            @background-alt;
     text-color:                  @foreground;

@@ -2,14 +2,14 @@
 
 * {
   font-family: JetBrains Mono Nerd Font;
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 700;
-  min-height: 11px;
+  min-height: 10px;
 }
 
 window#waybar {
-  border-radius: 5px;
-  border: 1px solid @mauve;
+  border-radius: 8px;
+  border: 1.5px solid @surface2;
   background: @base;
 }
 
@@ -40,12 +40,20 @@ tooltip label {
   color: white;
 }
 
+#tray {
+  padding: 0 18px 0 7px;
+}
+
 #workspaces button {
-  color: @white;
+  color: @overlay2;
 }
 
 #workspaces button.active {
-  background: rgba(255, 255, 255, 0.08);
+  color: @mauve
+}
+
+#workspaces button:hover {
+  color: @mauve;
 }
 
 #pulseaudio {
@@ -65,7 +73,7 @@ tooltip label {
 }
 
 #clock {
-  color: @mauve;
+  color: @text;
 }
 
 #memory {
@@ -84,7 +92,7 @@ tooltip label {
   color: @yellow;
 }
 #language {
-  color: @blue;
+  color: @mauve;
 }
 
 #custom-launcher {

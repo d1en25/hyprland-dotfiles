@@ -29,7 +29,7 @@ window {
     fullscreen:                  false;
     width:                       530px;
     x-offset:                    0px;
-    y-offset:                    20px;
+    y-offset:                    150px;
 
     /* properties for all widgets */
     enabled:                     true;
