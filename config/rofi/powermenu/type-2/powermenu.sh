@@ -100,6 +100,8 @@ $lock)
 		betterlockscreen -l
 	elif [[ -x '/usr/bin/i3lock' ]]; then
 		i3lock
+	elif [[ -x '/usr/bin/swaylock' ]]; then
+		swaylock
 	fi
 	;;
 $suspend)

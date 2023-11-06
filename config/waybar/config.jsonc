@@ -54,11 +54,12 @@
     "format": "{icon}",
     "on-click": "activate",
     "sort-by-number": true,
+    "only-active": false,
     "format-icons": {
-		"active": "",
-		"default": ""
-	},
-    "all-outputs": true
+      "active": "",
+      "default": ""
+    },
+    "all-outputs": false
   },
   "hyprland/language": {
     "format": "󰌌 {}",
