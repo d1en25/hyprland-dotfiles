@@ -1,20 +1,11 @@
 {
   "layer": "top",
-  "margin-left": 8,
-  "margin-right": 8,
-  "margin-top": 5,
-  "modules-left": [
-    "hyprland/workspaces",
-    "hyprland/language"
-  ],
-  "modules-center": [
-    "clock"
-  ],
-  "modules-right": [
-    "custom/spotify",
-    "pulseaudio",
-    "tray"
-  ],
+  "margin-left": 0,
+  "margin-right": 0,
+  "margin-top": 0,
+  "modules-left": ["custom/power", "hyprland/workspaces", "hyprland/language"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/spotify", "pulseaudio", "tray"],
   "custom/spotify": {
     "format": " {}",
     "max-length": 200,
@@ -36,11 +27,7 @@
     "format-muted": "󰕿 0%",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "format-icons": {
-      "default": [
-        "",
-        "",
-        ""
-      ]
+      "default": ["", "", ""]
     }
   },
   "temperature": {
@@ -51,15 +38,25 @@
     "format": " {temperatureC}°C"
   },
   "hyprland/workspaces": {
+    "disable-scroll": false,
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
     "format": "{icon}",
-    "on-click": "activate",
-    "sort-by-number": true,
-    "only-active": false,
     "format-icons": {
-      "active": "",
-      "default": ""
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "〇"
     },
-    "all-outputs": false
+    "persistent-workspaces": {
+      "*": 4
+    }
   },
   "hyprland/language": {
     "format": "󰌌 {}",
@@ -91,6 +88,6 @@
   },
   "custom/power": {
     "format": "⏻",
-    "on-click": "~/.config/rofi/powermenu/type-3/powermenu.sh"
+    "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh"
   }
 }

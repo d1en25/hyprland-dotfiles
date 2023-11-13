@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 10x10
+    offset =  8x8 
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -458,7 +458,7 @@
 #
 #
 [global]
-frame_color = "#cba6f7"
+frame_color = "#585b70"
 separator_color= frame
 
 [urgency_low]

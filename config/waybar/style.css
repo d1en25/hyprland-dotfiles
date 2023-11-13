@@ -2,15 +2,18 @@
 
 * {
   font-family: JetBrains Mono Nerd Font;
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 700;
-  min-height: 10px;
+  min-height: 19px;
 }
 
 window#waybar {
-  border-radius: 8px;
-  border: 1.5px solid @surface2;
-  background: @base;
+  border-radius: 0px;
+  border-bottom: 2px solid @surface2;
+  /* border-left: 1px solid @surface2; */
+  /* border-right: 1px solid @surface2; */
+
+  background: @base0;
 }
 
 window#waybar.hidden {
@@ -20,13 +23,14 @@ window#waybar.hidden {
 tooltip {
   background: @base;
 }
+
 tooltip label {
   color: white;
 }
 
 #clock,
 #cpu,
-#custom-player,
+#custom-spotify,
 #custom-clipboard,
 #language,
 #window,
@@ -34,14 +38,17 @@ tooltip label {
 #temperature,
 #pulseaudio,
 #wireplumber,
-#workspaces,
 #tray {
-  padding: 0 7px;
-  color: white;
+  padding: 0 10px;
+  color: @text;
 }
 
 #tray {
-  padding: 0 18px 0 7px;
+  padding: 0 15px 0 0;
+}
+
+#workspaces {
+  padding: 0 5px;
 }
 
 #workspaces button {
@@ -49,7 +56,7 @@ tooltip label {
 }
 
 #workspaces button.active {
-  color: @mauve
+  color: @pink;
 }
 
 #workspaces button:hover {
@@ -68,12 +75,14 @@ tooltip label {
 }
 
 #custom-spotify {
-  color: @green;
-  padding-right: 7px;
+  border-radius: 5px;
+  background: @green;
+  color: @base;
+  padding: 0 5px;
+  margin: 5px 0;
 }
 
 #clock {
-  color: @text;
 }
 
 #memory {
@@ -103,6 +112,6 @@ tooltip label {
 
 #custom-power {
   font-size: 17px;
-  padding: 0 15px 0 5px;
+  padding: 0 7px 0 15px;
   color: @red;
 }
