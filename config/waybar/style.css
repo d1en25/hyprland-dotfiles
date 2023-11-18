@@ -9,11 +9,11 @@
 
 window#waybar {
   border-radius: 0px;
-  border-bottom: 2px solid @surface2;
+  /* border-bottom: 2px solid @surface2; */
   /* border-left: 1px solid @surface2; */
   /* border-right: 1px solid @surface2; */
 
-  background: @base0;
+  background: rgba(40, 40, 40, 0.6);
 }
 
 window#waybar.hidden {
@@ -40,7 +40,7 @@ tooltip label {
 #wireplumber,
 #tray {
   padding: 0 10px;
-  color: @text;
+  color: #fbf1c7;
 }
 
 #tray {
@@ -52,19 +52,19 @@ tooltip label {
 }
 
 #workspaces button {
-  color: @overlay2;
+  color: #7c6f64;
 }
 
 #workspaces button.active {
-  color: @pink;
+  color: #b8bb26;
 }
 
 #workspaces button:hover {
-  color: @mauve;
+  color: #b8bb26;
 }
 
 #pulseaudio {
-  color: @blue;
+  color: #83a598;
 }
 
 @keyframes blink {
@@ -76,8 +76,8 @@ tooltip label {
 
 #custom-spotify {
   border-radius: 5px;
-  background: @green;
-  color: @base;
+  background: #8ec07c;
+  color: #282828;
   padding: 0 5px;
   margin: 5px 0;
 }
@@ -101,7 +101,7 @@ tooltip label {
   color: @yellow;
 }
 #language {
-  color: @mauve;
+  color: #b8bb26;
 }
 
 #custom-launcher {
@@ -113,5 +113,5 @@ tooltip label {
 #custom-power {
   font-size: 17px;
   padding: 0 7px 0 15px;
-  color: @red;
+  color: #fb4934;
 }

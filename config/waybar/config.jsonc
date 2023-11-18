@@ -3,9 +3,19 @@
   "margin-left": 0,
   "margin-right": 0,
   "margin-top": 0,
-  "modules-left": ["custom/power", "hyprland/workspaces", "hyprland/language"],
-  "modules-center": ["clock"],
-  "modules-right": ["custom/spotify", "pulseaudio", "tray"],
+  "modules-left": [
+    "custom/power",
+    "hyprland/workspaces",
+    "hyprland/language"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "custom/spotify",
+    "pulseaudio",
+    "tray"
+  ],
   "custom/spotify": {
     "format": " {}",
     "max-length": 200,
@@ -27,7 +37,11 @@
     "format-muted": "󰕿 0%",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "format-icons": {
-      "default": ["", "", ""]
+      "default": [
+        "",
+        "",
+        ""
+      ]
     }
   },
   "temperature": {
@@ -52,7 +66,7 @@
       "7": "七",
       "8": "八",
       "9": "九",
-      "10": "〇"
+      "10": "十"
     },
     "persistent-workspaces": {
       "*": 4

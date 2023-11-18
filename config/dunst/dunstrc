@@ -95,7 +95,7 @@
     frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#aaaaaa"
+    frame_color = "#98971a"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -457,19 +457,41 @@
 #    set_stack_tag = "volume"
 #
 #
-[global]
-frame_color = "#585b70"
-separator_color= frame
+[frame]
+    width = 1
+    color = "#83a598"
+
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    history = ctrl+grave
+    context = ctrl+shift+period
 
 [urgency_low]
-background = "#1E1E2E"
-foreground = "#CDD6F4"
+    background = "#282828"
+    foreground = "#ebdbb2"
 
 [urgency_normal]
-background = "#1E1E2E"
-foreground = "#CDD6F4"
+    background = "#282828"
+    foreground = "#ebdbb2"
 
 [urgency_critical]
-background = "#1E1E2E"
-foreground = "#CDD6F4"
-frame_color = "#FAB387"
+    background = "#282828"
+    foreground = "#ebdbb2"
+
+# [global]
+# frame_color = "#585b70"
+# separator_color= frame
+#
+# [urgency_low]
+# background = "#1E1E2E"
+# foreground = "#CDD6F4"
+#
+# [urgency_normal]
+# background = "#1E1E2E"
+# foreground = "#CDD6F4"
+#
+# [urgency_critical]
+# background = "#1E1E2E"
+# foreground = "#CDD6F4"
+# frame_color = "#FAB387"
