@@ -14,9 +14,11 @@ elif [ "$1" = "off" ]; then
 	killall swayidle
 	dunstify -a "Swayidle" -b "Sleep off" -i display-brightness-off-symbolic -u normal -u normal -r 91190 -t 3000
 elif [ "$1" = "dpms" ]; then
+	sleep 0.5
 	swaylock -f -c 000000
 	hyprctl dispatch dpms off
 else
+	sleep 0.5
 	swaylock -f -c 000000
 	systemctl suspend
 fi

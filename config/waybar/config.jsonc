@@ -1,8 +1,8 @@
 {
   "layer": "top",
-  "margin-left": 0,
-  "margin-right": 0,
-  "margin-top": 0,
+  "margin-left": 4,
+  "margin-right": 4,
+  "margin-top": 3,
   "modules-left": [
     "custom/power",
     "hyprland/workspaces",
@@ -52,24 +52,16 @@
     "format": " {temperatureC}°C"
   },
   "hyprland/workspaces": {
-    "disable-scroll": false,
-    "on-scroll-up": "hyprctl dispatch workspace -1",
-    "on-scroll-down": "hyprctl dispatch workspace +1",
     "format": "{icon}",
     "format-icons": {
-      "1": "一",
-      "2": "二",
-      "3": "三",
-      "4": "四",
-      "5": "五",
-      "6": "六",
-      "7": "七",
-      "8": "八",
-      "9": "九",
-      "10": "十"
+      "steam": "󰓓",
+      "home": "",
+      "zoom": "󰕧",
+      "browser": "󰈹",
+      "urgent": ""
     },
     "persistent-workspaces": {
-      "*": 4
+      "*": 3
     }
   },
   "hyprland/language": {

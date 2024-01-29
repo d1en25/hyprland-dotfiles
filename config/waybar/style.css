@@ -1,19 +1,16 @@
-@import "mocha.css";
-
 * {
   font-family: JetBrains Mono Nerd Font;
-  font-size: 13px;
+  font-size: 13.8px;
   font-weight: 700;
-  min-height: 19px;
+  min-height: 15px;
 }
 
 window#waybar {
-  border-radius: 0px;
-  /* border-bottom: 2px solid @surface2; */
+  border-radius: 5px;
+  /* border: 2px solid #9da9a0; */
   /* border-left: 1px solid @surface2; */
   /* border-right: 1px solid @surface2; */
-
-  background: rgba(40, 40, 40, 0.6);
+  background: rgba(39, 46, 51, 0.8);
 }
 
 window#waybar.hidden {
@@ -21,7 +18,7 @@ window#waybar.hidden {
 }
 
 tooltip {
-  background: @base;
+  background: #272e33;
 }
 
 tooltip label {
@@ -39,8 +36,11 @@ tooltip label {
 #pulseaudio,
 #wireplumber,
 #tray {
-  padding: 0 10px;
-  color: #fbf1c7;
+  /* background: #1d2021; */
+  /* border-radius: 5px; */
+  padding: 0 8px;
+  margin: 3px 5px;
+  color: white;
 }
 
 #tray {
@@ -48,23 +48,26 @@ tooltip label {
 }
 
 #workspaces {
-  padding: 0 5px;
+  /* background: #282828; */
+  /* border-radius: 5px; */
+  /* margin: 0px 5px; */
+  /* padding: 0 5px; */
 }
 
 #workspaces button {
-  color: #7c6f64;
+  color: #7a8478;
 }
 
 #workspaces button.active {
-  color: #b8bb26;
+  color: white;
 }
 
 #workspaces button:hover {
-  color: #b8bb26;
+  color: white;
 }
 
 #pulseaudio {
-  color: #83a598;
+  color: #7fbbb3;
 }
 
 @keyframes blink {
@@ -76,7 +79,7 @@ tooltip label {
 
 #custom-spotify {
   border-radius: 5px;
-  background: #8ec07c;
+  background: #83c092;
   color: #282828;
   padding: 0 5px;
   margin: 5px 0;
@@ -101,7 +104,7 @@ tooltip label {
   color: @yellow;
 }
 #language {
-  color: #b8bb26;
+  color: #d699b6;
 }
 
 #custom-launcher {
@@ -113,5 +116,5 @@ tooltip label {
 #custom-power {
   font-size: 17px;
   padding: 0 7px 0 15px;
-  color: #fb4934;
+  color: #e67380;
 }

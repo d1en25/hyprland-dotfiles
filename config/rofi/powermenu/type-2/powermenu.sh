@@ -67,8 +67,7 @@ run_cmd() {
 	elif [[ $1 == '--reboot' ]]; then
 		systemctl reboot
 	elif [[ $1 == '--suspend' ]]; then
-		mpc -q pause
-		amixer set Master mute
+		playerctl pause
 		systemctl suspend
 	elif [[ $1 == '--logout' ]]; then
 		if [[ "$DESKTOP_SESSION" == 'openbox' ]]; then
@@ -79,6 +78,8 @@ run_cmd() {
 			i3-msg exit
 		elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
 			qdbus org.kde.ksmserver /KSMServer logout 0 0 0
+		elif [[ "$DESKTOP_SESSION" == 'hyprland' ]]; then
+			hyprctl dispatch exit
 		fi
 		# fi
 	else
