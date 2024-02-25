@@ -1,3 +1,5 @@
+@import "./rose-pine.css";
+
 * {
   font-family: JetBrains Mono Nerd Font;
   font-size: 13.8px;
@@ -10,7 +12,7 @@ window#waybar {
   /* border: 2px solid #9da9a0; */
   /* border-left: 1px solid @surface2; */
   /* border-right: 1px solid @surface2; */
-  background: rgba(39, 46, 51, 0.8);
+  background: rgba(38, 35, 58, 0.8);
 }
 
 window#waybar.hidden {
@@ -36,11 +38,9 @@ tooltip label {
 #pulseaudio,
 #wireplumber,
 #tray {
-  /* background: #1d2021; */
-  /* border-radius: 5px; */
   padding: 0 8px;
   margin: 3px 5px;
-  color: white;
+  color: @text;
 }
 
 #tray {
@@ -55,11 +55,11 @@ tooltip label {
 }
 
 #workspaces button {
-  color: #7a8478;
+  color: @muted;
 }
 
 #workspaces button.active {
-  color: white;
+  color: @text;
 }
 
 #workspaces button:hover {
@@ -67,7 +67,7 @@ tooltip label {
 }
 
 #pulseaudio {
-  color: #7fbbb3;
+  color: @foam;
 }
 
 @keyframes blink {
@@ -85,8 +85,7 @@ tooltip label {
   margin: 5px 0;
 }
 
-#clock {
-}
+#clock {}
 
 #memory {
   color: @green;
@@ -97,14 +96,17 @@ tooltip label {
   padding: 0 15px 0 10px;
   color: @blue;
 }
+
 #cpu {
   color: @teal;
 }
+
 #temperature {
   color: @yellow;
 }
+
 #language {
-  color: #d699b6;
+  color: @rose;
 }
 
 #custom-launcher {
@@ -116,5 +118,5 @@ tooltip label {
 #custom-power {
   font-size: 17px;
   padding: 0 7px 0 15px;
-  color: #e67380;
+  color: @love;
 }

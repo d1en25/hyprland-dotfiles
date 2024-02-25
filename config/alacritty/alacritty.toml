@@ -1,4 +1,4 @@
-import = ["/home/sergey/.config/alacritty/themes/themes/everforest_dark.toml"]
+import = ["~/.config/alacritty/rose-pine.toml"]
 
 [cursor.style]
 shape = "Underline"
@@ -21,3 +21,4 @@ style = "Italic"
 [font.normal]
 family = "JetBrains Mono Nerd Font"
 style = "SemiBold"
+

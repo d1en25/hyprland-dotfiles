@@ -1,0 +1,4 @@
+audio.play_bitrate_non_metered_migrated=true
+connect.dial_devices="[]"
+ui.hide_hpto=true
+ui.minimize_to_tray=true
