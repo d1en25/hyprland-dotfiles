@@ -1,10 +1,9 @@
 {
   "layer": "top",
-  "margin-left": 4,
-  "margin-right": 4,
-  "margin-top": 3,
+  // "margin-left": 4,
+  // "margin-right": 4,
+  // "margin-top": 3,
   "modules-left": [
-    "custom/power",
     "hyprland/workspaces",
     "hyprland/language"
   ],
@@ -14,7 +13,9 @@
   "modules-right": [
     "custom/spotify",
     "pulseaudio",
-    "tray"
+    "memory",
+    "tray",
+    "custom/power"
   ],
   "custom/spotify": {
     "format": " {}",
@@ -28,82 +29,80 @@
     "on-scroll-down": "playerctl -p spotify next",
     "tooltip": true,
     "escape": true,
-    "exec": "/home/sergey/.config/waybar/scripts/player.sh"
+    "exec": "/home/sergey/.config/waybar/scripts/player.sh",
   },
   "pulseaudio": {
     "tooltip": false,
     "scroll-step": 5,
     "format": "{icon} {volume}%",
-    "format-muted": "󰕿 0%",
+    "format-muted": "󰟎",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "format-icons": {
       "default": [
-        "",
-        "",
-        ""
-      ]
-    }
+        "󰋋",
+      ],
+    },
   },
   "temperature": {
     // "thermal-zone": 2,
     // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     // "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
-    "format": " {temperatureC}°C"
+    "format": " {temperatureC}°C",
   },
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
-      "1": "一",
-      "2": "二",
-      "3": "三",
-      "4": "四",
-      "5": "五",
-      "6": "六",
-      "7": "七",
-      "8": "八",
-      "9": "九",
-      "10": "〇",
+      // "1": "一",
+      // "2": "二",
+      // "3": "三",
+      // "4": "四",
+      // "5": "五",
+      // "6": "六",
+      // "7": "七",
+      // "8": "八",
+      // "9": "九",
+      // "10": "〇",
       "steam": "󰓓",
       "home": "",
       "zoom": "󰕧",
       "browser": "󰈹",
-      "urgent": ""
+      "urgent": "",
     },
     "persistent-workspaces": {
-      "*": 3
-    }
+      "*": 3,
+    },
   },
   "hyprland/language": {
     "format": "󰌌 {}",
     "format-en": "English",
     "format-ru": "Russian",
-    "format-uk": "Ukraine"
+    "format-uk": "Ukraine",
   },
   "tray": {
-    "icon-size": 18,
-    "spacing": 8
+    "icon-size": 15,
+    "spacing": 10,
   },
   "clock": {
-    "format": "{:%A %d/%m %H:%M}"
+    "format": "{:%A %d/%m %H:%M}",
   },
   "cpu": {
     "interval": 15,
     "format": " {}%",
-    "max-length": 10
+    "max-length": 10,
   },
   "memory": {
-    "interval": 30,
-    "format": " {}%",
-    "max-length": 10
+    "interval": 5,
+    "format": "{used:0.1f}G/{total:0.1f}G ",
+    "max-length": 20,
   },
   "custom/launcher": {
     "format": "",
     "on-click": "~/.config/rofi/powermenu/type-3/powermenu.sh",
-    "on-click-right": "killall rofi"
+    "on-click-right": "killall rofi",
   },
   "custom/power": {
     "format": "⏻",
-    "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh"
-  }
+    "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh",
+  },
 }

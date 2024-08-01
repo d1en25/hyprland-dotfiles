@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/rose-pine.toml"]
+import = ["~/.config/alacritty/themes/themes/gruvbox_dark.toml"]
 
 [cursor.style]
 shape = "Underline"
@@ -22,3 +22,5 @@ style = "Italic"
 family = "JetBrains Mono Nerd Font"
 style = "SemiBold"
 
+[window]
+dynamic_padding = true
